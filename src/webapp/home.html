@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Content page 1</title>
 
 </head>
 <body>
 test
+<form method="post" action="#" th:action="@{/ppp}" >
+    <input type="text" th:name="name" th:value="value" />
+    <input type="submit" value="Submit" />
+</form>
+<h1 th:text="${name}"></h1>
 </body>
 </html>
